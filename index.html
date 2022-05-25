@@ -319,37 +319,65 @@
 
     </div>
 </section>
+
 <!-- .section-publications -->
 
 
+<!-- .section-contact form -->
+<section class="form-contact section-wrapper section-interest">
 
-    <div class="container-fluid">
-        <section class="section-contact section-wrapper gray-bg">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email-text" onchange="email_validate(this.value);">
+
+            <div class="status" id="status"></div>
+    </div>
+
+
+
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
+        <textarea class="form-control" id="txt" rows="3"></textarea>
+    </div>
+
+
+    <div class="mb-3">
+        <button id="submit_button"class="btn btn-dark" type="submit" onclick="clearFields();">Submit</button>
+    </div>
+
+
+
+</section>
+
+
+
+<div class="container-fluid">
+    <section class="section-contact section-wrapper gray-bg">
         <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title">
-                        <h2>Contact</h2>
-                    </div>
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h2>Contact</h2>
                 </div>
             </div>
-            <!--.row-->
-            <div class="row">
-                <div class="col-md-12">
-                    <address>
-                        <strong>Address</strong><br>
-                        3000 Buendia Street, Pearl,<br>
-                        Makati, Philippines
-                    </address>
-                    <address>
-                        <strong>Mobile Number</strong><br>
-                            09772902169
-                    </address>
- 
-                    <address>
-                        <strong>Email</strong><br>
-                        <a href="mailto:#">nikho.remulla@gmail.com</a>
-                    </address>
-                </div>
+        </div>
+        <!--.row-->
+        <div class="row">
+            <div class="col-md-12">
+                <address>
+                    <strong>Address</strong><br>
+                    3000 Buendia Street, Pearl,<br>
+                    Makati, Philippines
+                </address>
+                <address>
+                    <strong>Mobile Number</strong><br>
+                    09772902169
+                </address>
+
+                <address>
+                    <strong>Email</strong><br>
+                    <a href="mailto:#">nikho.remulla@gmail.com</a>
+                </address>
+            </div>
         </div>
        
 <!-- .footer -->
@@ -362,6 +390,9 @@
 
 <!-- jquery -->
 <script src="js/jquery-2.1.4.min.js"></script>
+
+<!-- Javascript -->
+<script src="./js/scripts.js"></script>
 
 <!-- Bootstrap -->
 <script src="js/bootstrap.min.js"></script>
